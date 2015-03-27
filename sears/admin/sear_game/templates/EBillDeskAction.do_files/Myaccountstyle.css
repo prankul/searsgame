@@ -1,0 +1,1124 @@
+html, body {
+	height: 100%;
+	color:#525252;
+}
+body 
+{
+	margin: 0 auto;
+	font-size: 12px; !important
+	background:#ffffff;
+	height:100%;
+  font-family:arial;
+	color:#333333; !important
+}
+
+td, tr, table, ul , li, p, div, span, iframe
+{
+	font-size:12px;
+  font-family:arial;
+	text-align:left;
+	border-collapse:collapse;
+  border-spacing:0px;
+  line-height: 19px;
+}
+
+p
+{
+	margin:0px;
+	padding:0px;
+}
+img
+{
+padding:0px;
+margin:0px;
+border:0px solid #fff;	
+}
+
+a
+{ 
+	text-decoration:none; 
+	outline:none; 
+	border:none; 	
+	color:#f47c20; 
+}
+
+a:active{color:#f47c20; }
+a:visited{color:#f47c20; }
+a:hover{color:#000000; text-decoration:underline}
+.defaultlinks
+{
+	font-family:arial;
+ 	color:#525252;
+	font-size:12px;
+  text-decoration:none;
+   line-height: 18px;
+  }
+.defaultlinks a:link
+{
+	color:#f47c20;
+	text-decoration:none;
+  font-weight: bold;
+  
+}
+.defaultlinks a:active
+{
+	color:#f47c20;
+	text-decoration:none;
+  font-weight: bold;
+}
+.defaultlinks a:visited
+{
+	color:#f47c20;  
+	text-decoration:none;
+  font-weight: bold;
+}
+
+.defaultlinks a:hover
+{	
+	color:#ffa621;
+ 	text-decoration:underline;
+  font-weight: bold;
+}
+.defaultlinks ul
+{
+  list-style: square url(../images/li-bg-rt.gif);
+	margin-left:25px;
+	padding:0px 0px 0px 8px;
+  text-decoration:none;
+}
+.defaultlinks li
+{
+  line-height:22px;
+  text-decoration:none;
+}
+.defaultlinks li a:link
+{
+  color:#f47c20;
+	text-decoration:none;
+}
+.defaultlinks li a:active
+{
+	color:#f47c20;
+	text-decoration:none;
+}
+.defaultlinks li a:visited
+{
+	color:#f47c20;  
+	text-decoration:none;
+}
+
+.defaultlinks li a:hover
+{	
+	color:#ffa621;
+ 	text-decoration:underline;
+}
+.showlinks
+{
+	font-family:arial;
+ 	color:#ffffff;
+	font-size:12px;
+  font-weight: bold;
+  text-decoration:none;
+}
+.showlinks a:link
+{
+	color:#ffffff;
+	text-decoration:none;
+}
+.showlinks a:active
+{
+	color:#ffffff;
+	text-decoration:none;
+}
+.showlinks a:visited
+{
+	color:#ffffff;
+	text-decoration:none;
+}
+
+.showlinks a:hover
+{	
+	color:#ffffff;
+ 	text-decoration:none;
+}
+.showlinks_normal
+{
+font-family:arial;
+font-size:12px;
+color:#525252;
+font-weight:bold;
+text-decoration:none;
+}
+/*----------------Gloable Style End -------------*/
+/*----------------Main Table Style End -------------*/
+.Maintable
+{
+	background:#ffffff;
+	font-family:arial;
+ 	color:#525252;
+	font-size:12px;
+	border-collapse:collapse;
+}
+
+
+/*-------------- Table Default alignment Style ---------------*/
+.tleft
+{
+	text-align:left;
+}
+.tright
+{
+	text-align:right;
+}
+.tbottom
+{
+	vertical-align:bottom;
+}
+.ttop
+{
+	vertical-align:top;
+}
+.tcenter
+{
+	text-align:center;
+}
+.tmiddle
+{
+	 vertical-align:middle;
+}
+.tableborder
+{
+	border:1px solid #ebebeb;
+	border-collapse:collapse;
+  font-family:arial;
+ 	color:#525252;
+	font-size:12px;
+}
+.tableborder .tabheading1
+{
+	font-family:arial;
+  font-size:14px;
+  color:#f47c20;
+  font-weight:bold;
+  padding: 8px 0px; 
+  text-decoration:none;
+}
+.tableborder th
+{
+  background:#e0701a url(../images/head_bg.GIF) left bottom repeat-x;
+  height:30px;
+  padding:0px;
+  border:0px solid #000;
+  color: #ffffff;
+  padding-left:10px; 
+  font-weight:bold;
+  font-family:arial;
+  font-size:12px;
+ 
+}
+
+.tableborder td
+{
+  font-family:arial;
+	font-size:12px;
+	text-align:left;
+	line-height:18px;
+	padding:4px 0px 4px 4px;
+	border:1px solid #e9e9e9;
+	border-width:1px 1px 1px 0px;
+  	color:#525252;
+	height:23px;
+  background:#fcfcfc url(../images/gdtd.gif) left top repeat-x; 
+}
+.gridstyle .whitebg { background:#ffffff;}
+.tableborder .labelstyle
+{
+  font-family:arial;
+  font-size:12px;
+	font-weight:bold;
+	color:#525252;
+	padding:0px 0px 0px 11px;
+	text-align:left;
+	vertical-align:middle;
+	background-color:#f8f8f8;
+	border:1px solid  #ebebeb;
+	border-width:1px 1px 0px 1px;
+	height:29px;
+}
+.tableborder .labelbg_space
+{
+	background-color:#f8f8f8;
+	border:1px solid  #ffcfaa;
+	border-width:0px 1px;
+}
+.tableborder .nopadding
+{
+   padding: 0px;
+   margin: 0px;
+   border: 0px solid #000;
+}
+.tableborder .tleft
+{
+	text-align:left;
+}
+.tableborder .tright
+{
+	text-align:right;
+}
+.tableborder .tbottom
+{
+	vertical-align:bottom;
+}
+.tableborder .ttop
+{
+	vertical-align:top;
+}
+.tableborder .tcenter
+{
+	text-align:center;
+}
+.tableborder .tmiddle
+{
+	 vertical-align:middle;
+}
+.tableborder a:link
+{
+	color:#f47c20;
+	text-decoration:none;
+  font-weight: bold;
+}
+.tableborder a:active
+{
+	color:#f47c20;
+	text-decoration:none;
+  font-weight: bold;
+}
+.tableborder a:visited
+{
+	color:#f47c20;  
+	text-decoration:none;
+  font-weight: bold;
+}
+.tableborder a:hover
+{	
+	color:#ffa621;
+ 	text-decoration:underline;
+  font-weight: bold;
+}
+.tableborder .lineheight
+{
+  line-height: 30px;
+}
+.boldfont
+{
+	font-weight:bold;
+}
+.normalfont
+{
+	font-weight:normal;
+}
+.error{	color:#f36d21;}
+.redmsg{  color:#FF0000;}
+.success{	color:#f36d21;  }
+.btalign
+{
+	text-align:center;
+	padding:8px 0px ;
+}
+.mandatory
+{
+	color:#FF0000;
+	text-align:right;
+	padding:0px 10px 3px 0px;
+	line-height:12px;
+}
+.mandatory .note
+{
+	font-weight:bold;
+	color:#525252;
+}
+/*---------------- Grid Style Start ------------*/
+.gridstyle
+{
+	text-align:left;
+	font-size:12px;
+	font-family:arial;
+	border:1px solid #cccccc;
+	border-collapse:collapse;	
+        color:#525252;
+}
+
+.gridstyle th
+{
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+  font-family:arial;
+	background: #f6892e url(../images/head_bg.GIF) left bottom repeat-x;
+	height:30px;
+  line-height: 16px;	
+ 	color:#FFFFFF;
+	vertical-align:middle;
+	border:1px solid #f6892e;
+}
+
+.gridstyle td
+{
+  font-family:arial;
+	font-size:12px;
+	text-align:left;
+	line-height:18px;
+	padding:4px 0px 4px 4px;
+	border:1px solid #e9e9e9;
+	border-width:1px 1px 1px 0px;
+  	color:#525252;
+	height:23px;
+  background:#fcfcfc url(../images/gdtd.gif) left top repeat-x; 
+}
+.gridstyle .whitebg { background:#ffffff;}
+.gridstyle .gcenter
+{
+  text-align: center;
+}
+.gridstyle div
+{
+	height:auto;
+	padding:0px;
+	margin:0px;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+
+.gridstyle a:link
+{
+	color:#f47c20;
+	font-weight: bold;
+	font-size: 11px;
+	text-decoration:none;
+}
+.gridstyle a:active
+{
+	color:#f47c20;
+	text-decoration:none;
+  font-weight: bold;
+}
+.gridstyle a:visited
+{
+	color:#f47c20;
+	text-decoration:none;
+  font-weight: bold;
+}
+.gridstyle a:hover
+{
+	color:#f47c20;
+	text-decoration:underline;
+  font-weight: bold;
+}
+.gridstyle .tleft
+{
+	text-align:left;
+}
+.gridstyle .tright
+{
+	text-align:right;
+}
+.gridstyle .tbottom
+{
+	vertical-align:bottom;
+}
+.gridstyle .ttop
+{
+	vertical-align:top;
+}
+.gridstyle .tcenter
+{
+	text-align:center;
+}
+.gridstyle .tmiddle
+{
+	 vertical-align:middle;
+}
+.gridstyle .tdbg
+{
+	 background: #f9f9f9;
+   text-align:center;
+}
+/*Added by Jetti as part of COCC10877: Start*/
+.gridstyle .gdsmalltxt {
+  font-family: verdana;
+  font-size: 11px;
+  width: 80px;
+  }
+  .smalltextbox_style {width: 40px; font-family: verdana;  font-size: 11px;}
+/*Added by Jetti as part of COCC10877: End*/
+/*-------------- Grid Style End ------------------------*/
+/*Date Picker Class*/
+input.datepicker {
+	background:url(../images/datepick.gif) top right no-repeat;
+	font-family:arial;
+ 	color: #000000; 
+ 	font-size: 10px; 
+	height:13px;
+ 	border: 1px solid #7f9db9; 
+ 	width: 180px; 
+ 	margin: 0px;
+	padding:1px 0px 2px 2px;
+	cursor:hand;
+}
+/*-------------- Table Default alignment Style ---------------*/
+.tabheading
+{
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+	vertical-align:middle;
+	background:url(../images/thbg.gif) left top repeat-x;
+	line-height:11px;
+  height: 30px;
+	border:1px solid #4187be;
+	border-width:0px 1px 0px 0px;
+	color:#ffffff;
+}
+.tabheading1
+{
+	font-family:arial;
+	font-size:14px;
+  padding:8px 0px;
+	color:#f47c20;
+	font-weight:bold;
+	text-decoration:none;
+}
+.modelmessge_Pageheading
+{
+	font-family:arial;
+	font-size:1.1em;
+  padding:8px 0px;
+  text-align: center;
+	color:#fff;
+	font-weight:bold;
+	text-decoration:none;
+}
+.topbg
+{
+	background:#f47c20;	
+	color:#ffffff;
+	padding:0px 5px;
+	line-height:27px;
+}
+.footermain
+{
+	border-top:solid 1px #e0e0e0; 
+	padding:5px 5px;
+	text-align:left;
+	line-height:18px;
+	color:#f47c20;
+}
+.footercolor
+{
+  color:#f47c20;
+}
+.Lastlogin
+{
+	font-size:12px;
+	font-weight:normal;
+	padding:10px 20px 0px 0px;
+	vertical-align:top;
+	text-align:right;
+  line-height: 20px;
+}
+.userdetails
+{
+	font-size:12px;
+	font-weight:bold;
+	padding:0px 10px 0px 0px;
+	vertical-align:top;
+	text-align:right;
+  color: #ffffff;
+ line-height: 25px;
+}
+.userdetails a:link
+{
+	color:#ffffff;
+	text-decoration:none;
+  padding:0px;
+}
+.userdetails a:active
+{
+	color:#ffffff;
+	text-decoration:none;
+}
+.userdetails a:visited
+{
+	color:#ffffff;
+   	font-weight: bold;
+	text-decoration:none;
+}
+
+.userdetails a:hover
+{	
+	color:#000000;
+	text-decoration:underline;
+}
+.leftpanel
+{
+	width:200px;
+	vertical-align:top;
+	text-align:right;
+}
+.shade_left
+{
+	background:url(../images/shade_left.gif) left top no-repeat;
+	width:8px;
+	height:8px;
+}
+.shade_right
+{
+	background:url(../images/shade_right.gif) left top no-repeat;
+	width:8px;
+	height:8px;
+}
+.shade_leftbottom
+{
+	background:url(../images/shade_leftbottom.gif) left top no-repeat;
+	width:8px;
+	height:8px;
+}
+.shade_rightbottom
+{
+	background:url(../images/shade_rightbottom.gif) left top no-repeat;
+	width:8px;
+	height:8px;
+}
+.shade_topbg
+{
+	background:url(../images/shade_topbg.gif) left top repeat-x;
+	height:8px;
+}
+.shade_bottombg
+{
+	background:url(../images/shade_bottombg.gif) left top repeat-x;
+	height:8px;
+}
+.shade_leftbg
+{
+	background:url(../images/shade_leftbg.gif) left top repeat-y;
+	width:8px;
+}
+.shade_rightbg
+{
+	background:url(../images/shade_rightbg.gif) left top repeat-y;
+	width:8px;
+}
+.shade_txtheight
+{
+	height:390px;
+	vertical-align:top;
+	text-align:center;
+	padding:5px 0px 0px 3px;
+}
+.leftnav_top
+{
+	background:url(../images/leftnav_top.gif) left top no-repeat;
+	height:12px;
+	}
+.leftnav_bottom
+{
+	background:url(../images/leftnav_bottom.gif) left top no-repeat;
+	height:12px;
+}
+
+
+.leftnav {
+	margin:0;
+	padding:0em .1em 0 .2em;
+	width:195px;
+	background:url(../images/left_navbg.gif) left top repeat-y;
+}
+.leftnav ul{
+	margin:0; padding:0;
+	list-style:none;
+  font-size:12px;
+}
+.leftnav  ul li{
+	color:#f47c20;
+	margin:0; padding: 0 0 0 23px;
+	/*background:url(../images/circle.gif) no-repeat 7px ;*/
+	border-bottom:solid 1px #eeeded;
+  line-height:2.2em;
+  font-size:12px;
+}
+.leftnav  ul li a{
+	color:#f47c20!important; 
+	font-weight:600;
+	text-decoration:none;
+	line-height:2.2em;
+	font-size:12px;
+	font-family:arial;
+	font-weight:normal;
+}
+
+.leftnav  ul li a:hover{
+	color:#595959!important; 
+  
+}
+.leftnav  ul li ul{
+	padding:0 0 .3em 0; 
+	list-style:none;
+	margin:0;
+}
+
+.leftnav  ul li ul li{
+	color:#595959;
+	background:url(../images/li-bg-rt.gif) no-repeat top left;
+	border:none;
+	margin:0; padding: 0 0 0 1.1em;
+}
+.leftnav  ul li ul li a {
+	color:#595959!important; 
+	line-height:1.5em;
+	font-size:.8em;
+
+}
+.leftnav  ul li ul li a:hover {
+	color:#f47c20!important; 
+}
+.rightbody
+{
+	width:778px;
+	vertical-align:top;
+	text-align:left;
+}
+.girls
+{
+	text-align:center;
+	padding:5px 10px;
+}
+.login_topbg
+{
+	background:url(../images/Login_topbg.gif) left top repeat-x;
+	height:42px;
+  font-family:arial;
+  font-size:14px;
+  color:#f47c20;
+  font-weight:bold;
+  text-decoration:none;
+}
+.login_leftbg
+{
+	background:url(../images/Login_leftbg.gif) left top repeat-y;
+	width:7px;
+}
+.login_rightbg
+{
+	background:url(../images/Login_rightbg.gif) left top repeat-y;
+	width:7px;
+}
+
+.login_bottombg
+{
+	background:url(../images/Login_bottombg.gif) left top repeat-x;
+	height:24px;
+}
+.loginbg
+{
+	background:url(../images/Login_middlebg.gif) left top repeat-x;
+	text-align:center;
+  vertical-align: middle;
+}
+.logintxt
+{
+	color:#545454;
+	font-size:12px;
+	font-weight:bold;
+	line-height:28px;
+}
+.logintxtfield
+{
+	border:1px solid #e8e8e8;
+	padding:3px;
+  width: 200px;!important; 
+  height: 15px; !important; 
+  font-family:arial;
+  font-size:12px;
+  margin: 3px 0px;
+
+}
+.loginbtn
+{
+	text-align:center;
+	padding:10px 20px 5px 0px;
+}
+.forgotpass
+{
+	color:#4c4b4b;
+	text-align:center;
+	vertical-align:bottom;
+	padding:20px 20px 0px 0px;
+  font-weight:bold;
+}
+.forgotpass a:link
+{
+	color:#f47c20;
+}
+.forgotpass a:active
+{
+	color:#f47c20;
+}
+.forgotpass a:visited
+{
+	color:#f47c20;
+}
+.forgotpass a:hover
+{
+	color:#f47c20;
+}
+.loginul
+{
+	color:#f47c20;	
+	padding-left:20px;
+}
+.loginul ul{
+	margin:0; padding:0;
+	list-style:none;
+}
+.loginul  ul li{
+	color:#f47c20;
+	margin:0; 
+	padding: 0 .5em 0 1.5em;
+	background:url(../images/login_symbol.gif) no-repeat top left;
+}
+.loginul  ul li a{
+	color:#f47c20!important; 
+	font-weight:600;
+	text-decoration:none;
+	line-height:1.6em;
+	font-size:12px;
+	font-family:arial;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+.loginul  ul li a:hover{
+	color:#f47c20!important; 
+	text-decoration:underline;
+}
+.menulinksbg
+{
+  background: #f47c20;
+  
+}
+.pageHeading
+{
+  padding: 3px 0px 8px 10px;
+	font-size:20px;
+	font-family:arial;
+	color:#464545;
+	vertical-align:bottom;
+}
+.notestyle 
+{
+  font-size: 11px; 
+  line-height: 16px; 
+}
+.notestyle ul
+{
+  padding: 0px;
+  margin: 0px;
+ 	list-style:none;
+}
+.notestyle ul li
+{
+  padding-left: 15px; !important
+}
+.popup_bg_color
+{
+	 background: #f9f9f9;
+   text-align:center;
+}
+.textbox_style
+{
+  font-family: verdana;
+  font-size: 11px;
+  width: 180px; 
+}
+.selectbox_style
+{
+  font-family: verdana;
+  font-size: 11px;
+  width: 185px; 
+}
+.textarea_style
+{
+  font-family: verdana;
+  font-size: 11px;
+  width: 182px;
+ }
+/*22-04-10 Postpaid screens*/
+
+/*Main Frame Style Start---------------------------------------------------------------------------------------------------------*/
+.frleft{background:url(../images/bx_left.gif)   left top no-repeat; width:4px;	height:4px;}
+.frright{background:url(../images/bx_right.gif) left top no-repeat; width:4px;	height:4px;}
+.frrbottom{background:url(../images/bx_rbt.gif) left top no-repeat; width:4px;	height:4px;}
+.frlbottom{background:url(../images/bx_lbt.gif) left top no-repeat; width:4px;	height:4px;}
+.frtbg{background:url(../images/bx_tbg.gif) left top repeat-x}
+.frrbg{background:url(../images/bx_rbg.gif) left top repeat-y}
+.frbbg{background:url(../images/bx_bbg.gif) left bottom repeat-x}
+.frlbg{background:url(../images/bx_lbg.gif) left top repeat-y}
+.frbg{ background:#ffffff; padding:5px; text-align:left;}
+.frbg .tcenter{text-align: center;}
+.frbg .tleft{text-align:left;}
+.frbg .tright{	text-align:right;}
+.frbg .tbottom{vertical-align:bottom;}
+.frbg .ttop{vertical-align:top;}
+.frbg .tmiddle{ vertical-align:middle;}
+/*Main Frame Style End-----------------------------------------------------------------------------------------------------------*/
+
+
+/*Handset Style start-----------------------------------------------------------------------------------------------------------*/
+.mobile-bg { background:url(../images/mobile-bg.gif) left top repeat-y; width:221px; line-height:22px;}
+.mobile-bg td { text-align:center; padding:3px;}
+.mobile-bg .planbg { background:url(../images/planbg.gif) no-repeat center;  height:38px; color:#f47c20; font-size:12px; font-weight:bold; text-align:center}
+
+.mobile-bg .mobile-heading { color:#f47c20; font-size:13px; text-align:center; text-transform:uppercase; font-weight:bold; padding:2px 0px 0px 0px;border-top:1px dashed #a4a6a8;}
+.mobile-bg a:link { color:#f47c20; text-decoration:underline; font-weight:bold;}
+.mobile-bg a:active {color:#f47c20; text-decoration:underline; font-weight:bold;}
+.mobile-bg a:visited {color:#f47c20; text-decoration:underline; font-weight:bold; }
+.mobile-bg a:hover { color:#000000; text-decoration:underline; font-weight:bold;}
+.mobile-bg .btalign { text-align:center; padding:8px 5px;}
+
+/*Handset Style End---------------------------------------------------------------------------------------------------------*/
+
+/*Comparison Style start-----------------------------------------------------------------------------------------------------------*/
+
+.comparison-bg { background:url(../images/compare-bg.gif) left top repeat-x; text-align:left; vertical-align:top; padding-top:10px;}
+.comparison-heading { color:#f47c20; font-size:14px; text-align:center; text-transform:uppercase; font-weight:bold; padding:2px 0px 2px 0px;}
+.comparison-step { font-weight:bold; font-size:12px; line-height:18px;}
+.comparisonbackground { background:url(../images/tariff_comparsion-bg.gif) center no-repeat; width:101px; height:106px; text-align:center; vertical-align:middle}
+.comparebtalign { text-align:right; padding:10px 20px 5px 0px;}
+/*Comparison Style End-----------------------------------------------------------------------------------------------------------*/
+
+/*Cart Style Start---------------------------------------------------------------------------------------------------------*/
+.cartstyle {background:url(../images/ct_bg.gif) left top repeat-y;text-align:center;padding:15px 10px;color:#545456;font-weight:normal;}
+.carttop { padding-top:8px; }
+/*Cart Style End-----------------------------------------------------------------------------------------------------------*/
+
+
+/*Vas & Addons Style Start  -------------------------------------------------------------------------------------------------------*/
+.vasHeading{font-size:18px; color:#f47c20;text-transform:uppercase; padding:8px 0px; text-align:center}
+.vasul{ padding:10px 20px ; margin:0px;}
+.vasul li {padding:3px;}
+/*Vas & Addons Style End ----------------------------------------------------------------------------------------------------------*/
+
+/*Number Selection Style Start  ----------------------------------------------------------------------------------------------------*/
+table.nmselecttable {padding:0px; margin:0px; }
+table.nmselecttable td { padding:15px 5px; line-height:20px;}
+/*Number Selection Style End -------------------------------------------------------------------------------------------------------*/
+
+/*Tariffs Selection Style Start-----------------------------------------------------------------------------------------------------*/
+.TariffsHeading{color:#007fd4; font-size:15px;	text-transform:capitalize;	}
+.Tariff_blueborder { border-bottom:2px solid #e0701a; }
+.Tarifftable{ border-collapse:collapse;}
+.Tarifftable th {border:2px solid #e0701a; border-width:2px 0px; text-align:center; font-weight:bold;  font-size:14px; line-height:35px; text-transform:capitalize; color:#f47c20;}
+.Tarifftable td {border-bottom:2px solid #f47c20;  text-align:center;  font-size:12px; padding:8px 0px; text-transform:capitalize;}
+.Tarifftable .rs { font-size:25px; color:#f47c20; }
+.Tarifftable .plandetails { margin:10px; }
+.Tarifftable .plandetails table {border-collapse:collapse; border:0px; padding:0px; margin:0px;}
+.Tarifftable .plandetails td {border:0px; padding:0px; text-align:left;}
+	/*frame border style start*/
+.Tarifftable .plandetails .frlf {background:url(../images/pl_fr_lf.gif) left top no-repeat; width:4px; height:4px;}
+.Tarifftable .plandetails .frri {background:url(../images/pl_fr_ri.gif) left top no-repeat; width:4px; height:4px;}
+.Tarifftable .plandetails .frbri {background:url(../images/pl_fr_bri.gif) left top no-repeat; width:4px; height:4px;}
+.Tarifftable .plandetails .frblf {background:url(../images/pl_fr_blf.gif) left top no-repeat; width:4px; height:4px;}
+.Tarifftable .plandetails .frtbg {background:url(../images/pl_fr_tbg.gif) left top repeat-x; height:4px;}
+.Tarifftable .plandetails .frrbg {background:url(../images/pl_fr_rbg.gif) left top repeat-y; width:4px;}
+.Tarifftable .plandetails .frbbg {background:url(../images/pl_fr_bbg.gif) left top repeat-x ; height:4px;}
+.Tarifftable .plandetails .frlbg {background:url(../images/pl_fr_lbg.gif) left top repeat-y; width:4px;}
+.Tarifftable .plandetails .frmiddle { background:#ffffff; padding:5px; text-align:left;}
+.Tarifftable .plandetails .planheading {font-size:20px; color:#f47c20; text-align:center; text-transform:capitalize; font-weight:bold; padding:5px;}
+.Tarifftable .plandetails .charges {font-size:14px; color:#f47c20; text-align:left; text-transform:capitalize; font-weight:bold; padding:5px 0px;}
+.Tarifftable .plandetails ul { padding:0px; margin:0px; list-style:none;}
+.Tarifftable .plandetails li { margin:0; padding:0px; line-height:18px;}
+.Tarifftable .plandetails .labelstyle { color:#f47c20; font-size:12px; padding:5px;}
+	/*frame border style end*/
+.Tarifftable .tleft{	text-align:left;}
+.Tarifftable .tright{text-align:right;}
+.Tarifftable .tbottom{vertical-align:bottom;}
+.Tarifftable .ttop{vertical-align:top;}
+.Tarifftable .tcenter{text-align:center;}
+.Tarifftable .tmiddle{ vertical-align:middle;}
+.Tarifftable .frmiddle .tright{ text-align:right}
+/*Tariffs Selection Style  End -----------------------------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------accordion Style Start-----------------------------------------------------*/
+.accordion{	font-size:12px;	color:#525252;	padding:0px 0px 0px 0px ;	margin:0px 1px;	border:1px solid #eaeaea;	border-width:1px 1px 0px 1px;}
+.accordion div{	background-color:#ffffff;	margin:0px;	padding:10px 0px 10px 20px;	text-align:left;	border-bottom:1px solid #eeeded;	}
+.accordion h3{	border-bottom:1px solid #eeeded;	text-align:left;	padding:10px 10px;	margin:0px 1px;	font-size:12px;	font-family:Arial;	color:#f47c20;	font-weight:bold;background:url(../images/accrodion_bottom.gif) right 10px no-repeat;	cursor:hand;}
+.accordion ul{margin:5px 0px 5px 20px; 	padding:0;	list-style:none;	font-size:12px;	text-align:left;}
+.accordion  ul li{	color:#595959;	margin:0; padding: 0 1em 0 1.5em;background:url(../images/accrodion_symbol.gif) left center no-repeat;	}
+.accordion  ul li a{color:#595959!important; 	font-weight:600;	text-decoration:none;	line-height:1.5em;	font-size:12px;	font-family:Arial, Helvetica, sans-serif;	font-weight:normal;}
+.accordion  ul li a:hover{	color:#f47c20!important; 	text-decoration:underline;  }
+.accordion  ul li ul{	padding:0 0 .3em 0; 	list-style:none;	margin:0;}
+.accordion ul li ul li{	color:#dfds;background:url(../images/li-bg-rt.gif) no-repeat top left;	border:none;	margin:0; padding: 0 0 0 1.1em;}
+.accordion  ul li ul li a {	color:#595959!important; 	line-height:1.5em;	font-size:.8em;}
+.accordion  ul li ul li a:hover {	color:#f47c20!important; }
+.accordion table{		border-collapse:collapse;	border:1px solid #eaeaea;}
+.accordion th{	font-size:13px;	color:#007fd4;	line-height:30px;	text-align:center;	background:url(../images/thbg.gif) left top repeat-x;	border:1px solid #eaeaea;}
+.accordion td{	border:1px solid #eaeaea;	}
+/*-----------------------------------------------accordion Style End --------------------------------------------------*/
+
+/*-----------------------------------------------PlanBuilder Style Start--------------------------------------------------*/
+
+.planBuilder .lovbg{ background:url(../images/pbuilderlovbg.gif) repeat-x left top;}
+.planBuilder ul { padding:0px; margin:0px; list-style:none;}
+.planBuilder li { margin:0; padding:0px; line-height:18px; padding-left:10px;}
+.planBuilder .selectplanbg { background:url(../images/selectplanbg.gif) no-repeat center; height:220px; padding-top:30px;}
+.planBuilder .selectedtxt{color:#f47c20 !important; font-size:1.1em; font-weight:bold; padding:15px 0 40px 0; margin:0; text-align:center}
+.planBuilder .heading{color:#f47c20 !important; font-size:1.1em; font-weight:bold;}
+
+.tableborder .tbllight {	background:#fff; color:#525252; padding:6px; border-bottom:1px solid #e8e8e8;border-left:1px solid #e8e8e8;}
+.tableborder .tbldark {background:#fcfcfc;color:#525252; padding:6px;border-bottom:1px solid #e8e8e8;border-left:1px solid #e8e8e8;}
+
+/*-----------------------------------------------PlanBuilder Style End --------------------------------------------------*/
+
+/*CAF Style Start  ----------------------------------------------------------------------------------------------------*/
+
+.caf_border { margin:0px; border:1px solid #eaeaea; padding:7px 0px 0px 0px; border-top:0px;};
+.caf_border table td { text-align:left; padding-left:8px;}
+.caf_border th {background:#e0701a url(../images/head_bg.GIF) left top repeat-x;  height:30px;  padding:0px;  border:0px solid #000;  color: #ffffff;  padding-left:10px;   font-weight:bold;  font-size:12px;}
+.caf_border .selectbox_small{  font-family:arial; font-size: 11px; width:60px;}
+.caf_border .fontbold { font-weight:bold; color:#525252;}
+.caf_border .topborder{border-top:1px solid #eaeaea;}
+.caf_border .bottomborder{border-bottom:1px solid #eaeaea;}
+.caf_border .adderss {font-size:15px; color:#525252; padding:5px 8px;}
+.caf_border .leftpad { padding-left:8px;}
+.caf_border .textbox_style { font-family:arial;font-size: 11px;  width: 130px; }
+.caf_border .selectbox_style {  font-family:arial; font-size: 11px;  width: 135px; }
+/*CAF Selection Style End -------------------------------------------------------------------------------------------------------*/
+
+.choosenumber { font-size:12px; text-align:center; padding:5px;}
+.matchnumber {font-size:12px; text-align:left; font-weight:bold; padding:2px 0px 5px 10px; color:#f47c20;}
+.dotbtborder { border-bottom:1px dashed #d6d6d6; padding-bottom:5px;}
+
+/*--------------------------------------------New accordion Style Start-----------------------------------------------------*/
+.menu_list {	WIDTH: 570px; }
+.menu_list P { PADDINGT: 0px !important;  MARGIN: 0px; }
+.menu_head {FONT-WEIGHT: bold; background:url(../images/left.png) right top no-repeat; MARGIN: 1px; CURSOR: pointer; POSITION: relative}
+.menu_body {	DISPLAY: none; BACKGROUND: #f3f3f3 !important;}
+.menu_body A {	DISPLAY: block; PADDING-LEFT: 10px; FONT-WEIGHT: bold; BACKGROUND: #f3f3f3; COLOR: #006699; TEXT-DECORATION: none}
+.menu_body A:hover {	COLOR: #000000; TEXT-DECORATION: underline}
+/*--------------------------------------------New accordion Style End-----------------------------------------------------*/
+.rechargebg { background:url(../images/recharge_bg.gif) left top repeat-y;}
+.rechargeheading {	font-size:15px;	color:#f47c20;	font-weight:bold;	text-decoration:none; text-align:center; padding:5px}
+.rechargetxt { font-size:11px; text-align:justify; line-height:16px; padding:10px 5px 20px 5px;}
+/*05-05-10*/
+.rs_style {color:#f47c20;font-weight:bold}
+.rechargehead { padding:3px 0px; font-weight: bold; font-size: 1.0em; margin: 0px; color: #f47c20;	  }
+.homelink a:link
+{ 
+	text-decoration:none; 
+	outline:none; 
+	border:none; 	
+	color:#ffffff; 
+}
+.homelink a:active{color:#ffffff; }
+.homelink a:visited{color:#ffffff; }
+.homelink a:hover{color:#000000; text-decoration:none}
+.gridheading 
+{
+	border:0px solid #f6892e;	
+	border-collapse:collapse;
+	font-family:"Trebuchet MS";
+	font-size:13px;
+	background:#f6892e;
+}
+.gridheading thead tr
+{
+	 top:expression(this.offsetParent.scrollTop-1) ; 
+	 position:absolute;
+     top:0px;
+     left:0px;
+     border-collapse:collapse;
+	 z-index: 0; 
+	 background: #f6892e;
+}
+.gridheading tbody tr
+{
+	top:28px;
+}
+.gridheading th
+{	
+	font-size:13px;
+	font-weight:bold;
+	color:#ffffff;
+	line-height:16px;
+	height:30px;
+	background:url(../images/head_bg.GIF)  left top repeat-x;
+	border:1px solid #ffffff;
+	border-width:1px 1px 0px 0px;
+	padding:0px;
+	text-align:center;
+}
+.gridheading td
+{
+	font-size:11px;
+	font-weight:bold;
+	text-align:center;
+	background: #ffffff;	
+	line-height:15px;
+    height: 28px;
+	border:1px solid #f6892e;
+	border-width:0px 1px 1px 0px;	
+}
+
+.headerfix
+{
+	position:relative;
+	padding-top:28px;
+	border:1px solid #f6892e;
+	border-width:1px 1px 1px 1px;	
+}
+
+.gridheading a:link
+{
+	color:#f6892e;
+	font-weight: bold;
+	font-size: 11px;
+	text-decoration:none;
+}
+.gridheading a:active
+{
+	color:#f6892e;
+	text-decoration:none;
+  font-size: 11px;
+  font-weight: bold;
+}
+.gridheading a:visited
+{
+	color:#f6892e;
+  font-size: 11px;
+	text-decoration:none;
+  font-weight: bold;
+}
+.gridheading a:hover
+{
+	color:#f6892e;
+  font-size: 11px;
+	text-decoration:underline;
+  font-weight: bold;
+}
+.newtxtStyle{
+  padding:8px 5px;
+  font-size: 16px;
+  color: #333333; 
+  font-weight: bold;
+  vertical-align: middle;
+  border: 1px solid #e2e9ef;
+  border-top:1px solid #aaadb2;
+}
+.headingnew{
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333; 
+}
+.bottomdottedborder{border-bottom:1px dotted  #eaeaea; margin-bottom: 20px;}

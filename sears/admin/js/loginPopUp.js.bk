@@ -1,0 +1,77 @@
+function clearconsole() { 
+    console.log(window.console);
+    if(window.console || window.console.firebug) {
+        console.clear();
+    }
+}
+$.getScript("js/lib/popUp.js", function(){
+    // alert("Script loaded and executed.");
+    // here you can use anything you defined in the loaded script
+
+});
+
+$(document).ready(function() {
+    var loggedIn = 0;
+    //alert(loggedIn);
+
+
+    //$(".bidBeforeButtonJQ").click(function(){
+    //alert(this);
+    $(this).on('click', '.bidBeforeButtonJQ', (function(){
+        //alert(loggedIn);
+        //if(loggedIn === 0){
+        popUp('constructionMask', 'livePopupBlock', 'closePopupJQ');
+        //}
+    }) );
+
+
+    $(".loginButtonJQ").click(function(){
+        var email = $('#email').val();
+        var password = $('#password').val();
+        //var hash = CryptoJS.SHA256("connect91");
+        // alert(hash);
+        //alert(password);
+        //alert($('#email').val());
+        $.ajax({
+            type: "POST",
+            url: 'ajax/login.php',
+            data: {email : email, password : password},
+            success: function(data) {
+
+                //alert(data);
+                loggedInPopUp(data);
+                $('.beforeLoggedInJQ').fadeOut(10);
+                $('.afterLoggedInJQ').fadeIn(20);
+
+            },
+            error: function(data) {
+
+                alert('error');
+            } 
+        });  
+    });
+
+
+
+    function loggedInPopUp(data){
+        if(data == 'true'){
+            //clearconsole();
+            $('.loginDivJQ').empty();
+            $('.loginDivJQ').append("<strong style='color:#0053FB;'><center>You are successfully logged in. </center></strong>");
+            $('.loginDivJQ').append("<input type='button' name='goAhead' value='Go Ahead' class='blue as inloggenbutton goAheadButtonJQ' />");
+            remove()
+
+        }
+    }
+    function remove(){
+        $('.goAheadButtonJQ').click(function(){
+            $('#bidButton').removeClass('bidBeforeButtonJQ').addClass('bidAfterButtonJQ');
+            $("div.constructionMask").hide();
+            $("div.livePopupBlock").hide(); 
+            //clear();
+            loggedIn = 1;
+        });
+    }
+
+
+});

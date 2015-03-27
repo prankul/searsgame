@@ -1,0 +1,116 @@
+<?php
+
+
+   include_once("model/C91_Parent.php");
+
+    class C91_Expectation extends C91_Parent {
+
+        public $_id=NULL;
+        public $expectation;
+        public $goal;
+        public $game_session=array(); // reference key one to one
+
+        public static $my_collection = 'expectation'; // specify collection name
+
+        function __construct($id=NULL){
+
+
+            if(empty($id) || $id==NULL){
+
+                // $this->_id = new MongoId();
+            }
+            else{ 
+
+                $this->_id = new MongoId($id);
+            }    
+        }    
+
+        public function setId($id){
+
+            $this->_id = new MongoId($id);
+        }      
+        
+         public function getId($id){
+
+            return $this->_id;
+        }        
+
+        public function setExpectation($expectation){ 
+
+            $this->expectation = $expectation;
+        }    
+
+        public function getExpectation(){ 
+
+            return $this->expectation;
+        }    
+
+
+        public function setGoal($goal){ 
+
+            $this->goal = $goal;
+        }    
+
+        public function getGoal(){
+
+            return $this->goal;
+        }
+
+
+        public function setGameSession($game_session){ 
+
+            if(!empty($game_session)){  
+                foreach($game_session as $g)
+                {
+                    array_push($this->game_session,$g); 
+                } 
+            } 
+        }    
+        
+        // update specific fields only
+        
+        public function  saveDocumentArray($criteria,$array){
+
+            parent::saveDocumentArray(self::$my_collection,$criteria,$array);
+
+        }         
+
+
+
+        // other functions
+
+        public function  saveDocument(){
+
+            parent::saveDocument(self::$my_collection,$this);
+
+        }
+
+        public function getSingleObject($field_array){
+
+            $map_array = parent::getSingleObject(self::$my_collection,$this->_id,$field_array); 
+
+
+            foreach($map_array as $key=>$value){
+
+                $this->$key = $value;
+            }
+
+        }   
+
+        public function getAllObject(){
+
+            $map_array = parent::getAll(self::$my_collection); 
+            return $map_array;
+        } 
+
+        public function removeDocument(){ 
+
+            return parent::removeDocument(self::$my_collection,array('_id' => $this->_id));
+
+            // here criterial is id
+
+        }
+
+    }
+
+?>

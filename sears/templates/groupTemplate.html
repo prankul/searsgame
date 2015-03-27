@@ -1,0 +1,53 @@
+                        
+                         
+
+<div id="form" >
+
+
+	
+       
+        <form id="group-form">
+    	  <input type="alphanum" id="group_name" placeholder="Group Name" required>
+	     
+	     <input type=submit id="submit-group" value="submit" >
+        </form>
+        <div class="add-group">Add New Group</div>
+        
+       
+        
+</div>	
+<div id="groupList">
+			<ul>
+	<% _.each(groups, function(group){  
+ 
+            var className = "empty"; 
+            var msg = "";
+ 
+            if(group.is_group_admin == true){
+             
+                className = "change";  
+                msg = "click to edit";
+            }
+  			
+	 	%>	
+         <li><div class="group-name  <%=group._id%>" ><span id="<%=group._id%>" title="<%=msg%>" class="mygroup_name <%=className%>" ><%=group.name%></span></div> <div class="member-list" id="<%=group._id%>">Group Member</div>
+         
+           
+         
+         <div id="<%=group._id%>" class="play-show-hold"><span id="group_overview">Group Overview</span></div>  
+        
+         <div class="play-show-hold"><input name="group_chk" type="checkbox" value="<%=group._id%>" ></div>  
+          <%  
+          if(group.is_group_admin == true){ %>
+         
+             
+         <span id="<%=group._id%>" class="removeGroup">remove</span>
+           </li>
+         <% } %>
+         
+  	<% }); %>
+</ul>
+
+     <span id="merge_group" >merge selected group</span>
+</div>
+

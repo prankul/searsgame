@@ -1,0 +1,33 @@
+
+@media (max-width:600px) {
+img{ width:100%;}
+h1.logo-holder{ width:100%; padding:0;}
+#top-header{ width:95%; margin:0 10px;}
+.menuHolder, .category-Menu nav, .overview-content, .gallery-image, .overviewInfo, .dealContainer, .auctionContainer, ul.settingNav, .dealOverview-content, .dealOverview-content .gallery-image, .dealOverview-content .overviewInfo, .emailHolder .newsletetr, .footerContainer, .topFooter, .copyrightHolder, .pageContent, .productInfo, .bidHistory, .formHolder, .extraInfo, .userInputs, .productHold, ul.myAccountmenu li{ float:left; width:100%;}
+.gallery-image { padding:10px; box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box; -webkit-box-sizing:border-box;}
+#Overview .leftside, #Overview .rightside { display:none;}
+.AuctionLabel { font-size:1em;top:-12px;left:-1px;padding: 7% 3%;}
+.pageContent{ padding:0 10px; width:100%; box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box; -webkit-box-sizing:border-box;}
+.auctionContainer{ margin-left:0;}
+.dealOverview-content { margin:30px 0; padding:1px}
+.dealOverview-content .gallery-image { padding:1px;}
+.dealOverview-content .gallery-image img { height:auto;}
+.dealOverview-content .overviewInfo p{ height:auto;}
+.emailHolder { padding:4%; margin-bottom:9%; width:92%;}
+.emailHolder input[type="text"]{ width:66%; margin-top:4%; padding:2% 1%;}
+.emailHolder input[type="submit"]{ font-size:1.3em; margin-top:11px;}
+a.helpSupport, a.businesses, a.affiliate   { margin-right:0; margin-left:1%; float:left;}
+.copyrightHolder { padding:3%; box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box; -webkit-box-sizing:border-box;}
+ul.terms{ float:left; margin-top:6px;}
+
+a.helpSupport { float:left;margin-right:1%; width:132px; font-size:.9em; padding:13px 10px 13px 34px; background-position:3% 50%; background-size:21%; }
+
+a.businesses { float:left;margin-right:-1px; width:114px; font-size:.9em; padding:13px 10px 13px 38px; background-position:4% 50%;background-size:28%;}
+
+a.affiliate { float:left;width:100px;font-size:.9em; padding:13px 10px 13px 40px; background-position:6% 50%; background-size:33%; margin-bottom:10px;}
+ul.myAccountmenu li a{ width:100%; display:block;}
+ul.myAccountmenu li { padding-bottom:2px;}
+.formHolder3 input[type="text"]{ width:78%!important;}
+.formHolder3 select{ width:78%!important;}
+.formHolder5 input[type="text"] {width:63%!important;}
+}

@@ -1,0 +1,86 @@
+<div id="login-template" class="container">
+    <div class="row clearfix" id="login-form-container">
+        <!--<img class="displayed" src="/assets/img/logo.png" alt="logo"/>-->
+
+        <div class="col-md-5 well well-lg text-center">
+            <h1><span class="login"></span>Login</h1>
+            <div class="height:50px;">
+                <ul id="login-errors" class="parsley-error-list"></ul>
+            </div>
+
+            <form id="login-form" class="form" data-validate="parsley">
+                <fieldset>
+                    <div class="control-group">
+                        <div class="controls">
+                            <input type="email" id="login-username-input" name="username" placeholder="Email-ID"  data-parsley-trigger="change" required  
+                                data-required="true" data-notblank="true">
+                            <span class="help-block"></span>
+                        </div>
+                    </div>
+                    <div class="control-group mb20">
+                        <div class="controls">
+                            <input class="input-medium" type="password" id="login-password-input" placeholder="Password" name="user_password" 
+                                data-required="true" data-notblank="true" data-rangelength="[5,25]">
+                            <span class="help-block"></span>
+                        </div>
+                    </div>
+                    <a href="#" id="login-btn" class="btn btn-primary btn-lg" data-bypass>Login</a>
+                    <a href="#" id="forgot-pwd">Forgot Password?</a>
+
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="col-md-2"></div>
+
+        <div class="col-md-5 well well-lg text-center">
+            <h1><span class="signup"></span>Sign up</h1>
+            <div class="height:50px;">
+                <ul id="signup-errors" class="parsley-error-list"></ul>
+            </div>
+
+
+
+            <form id="signup-form" class="form" data-validate="parsley">
+                <fieldset>
+                    <div class="control-group">
+                        <div class="controls">
+                            <input type="text" id="signup-name-input" name="name" placeholder="Your First Name" 
+                                data-required="true" data-notblank="true" required>
+                            <span class="help-block"></span>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="controls">
+                            <input type="email" id="signup-emailID-input" name="emailid" placeholder="Email-ID"
+                                data-required="true" data-notblank="true"  data-parsley-trigger="change" required>
+                            <span class="help-block"></span>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="controls">
+                            <input class="input-medium" type="password" id="signup-password-input" placeholder="Password" name="user_password" 
+                                value="" data-required="true" data-notblank="true" data-rangelength="[5,25]">
+                            <span class="help-block"></span>
+                        </div>
+                    </div>
+                    <div class="control-group mb20">
+                        <div class="controls">
+                            <input class="input-medium" type="password" id="signup-password-confirm-input" placeholder="Confirm Password" name="user_password" 
+                                value="" data-required="true" data-notblank="true" data-rangelength="[5,25]" data-equalto="#signup-password-input">
+                            <span class="help-block"></span>
+                        </div>
+                    </div>
+
+                    <a href="#" id="signup-btn" class="btn btn-primary btn-lg" data-bypass>Signup</a>
+
+                </fieldset>
+            </form>
+        </div>
+        <div id="fb">
+        
+        </div>
+        
+        </div>
+    </div>
+</div>

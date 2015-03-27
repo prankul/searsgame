@@ -1,0 +1,43 @@
+<?php
+    include_once("view/view.php"); // parent view 
+
+
+    // List all function
+
+    function expectationList(){ 
+
+
+        listAll(array("id","Expectation","Goal"),array("_id","expectation","goal"));   /*  *(first parameter page-name),*(second is title for column),(third parameter is for column to show)*/
+
+    }
+
+
+
+    // edit and add new form function   
+
+    function expectationForm($object=null){?>
+
+  <!-- change action -->
+    <fieldset>
+            <legend><?php if($object->getId()!=null) echo "EDIT"; else echo "ADD";?> Group</legend>
+    <form action="<?=base_path?>?page=expectation&update=<?=$object->getId()?>" method=post > 
+
+        Expectation<input type="text" name="expectation" value="<?=$object->getExpectation()?>" >
+
+        <input type="text" name="goal" value="<?=$object->getGoal()?>" >
+
+        <input type=submit name="addORupdate" value="<?php if($object->getId()==null){ echo "add"; }else{ echo "update"; }  ?>">
+
+    </form></fieldset>
+
+    <?php }  
+
+
+?>
+
+
+ 
+
+
+
+  

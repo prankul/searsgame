@@ -1,0 +1,30 @@
+    <table id="matrix-table" class="table">
+     <thead>
+     <th>Sr. no</th> 
+     <th>Game Type</th>
+     <th>Picks</th>
+     <th>Played</th>
+     <th>Accurate</th>
+     <th>Get Resume</th>
+     
+     </thead>
+      
+      
+<%  var i = 0;
+ _.each(games, function(game){  
+         %>    
+         
+      <tr>
+      <td><%=++i%></td>
+      <td><%=game.face%></td>
+      <td><%=game.picks%></td>
+      <td><%=game.size_of_result%></td>
+      <td><%=game.correct%></td>
+      <td class="resume" id="<%=game.id%>">Resume This Game</td>
+      
+      </li>    
+         
+         <% }); %>
+    
+   </table>
+         

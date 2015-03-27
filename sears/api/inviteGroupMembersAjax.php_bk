@@ -1,0 +1,35 @@
+<?php
+        require_once('../includes/init_vars.php');
+        $nameOfDatabase = DB_NAME;
+        $connection = new MongoClient(CONN_STR);
+    $db = $connection->$nameOfDatabase;
+
+    $collectionName = "group_invite";
+    $collection = $db->$collectionName; 
+
+    // $data = json_decode(file_get_contents('php://input'), true);
+    //$data = array("group_id"=>1 , "email"=>'test@test.com' ,"status"=>1 );
+
+    $id = $data['id'];
+    $group_id = $data['group_id'];
+    $email = $data['email'];
+    $status = $data['status']; 
+    $date = time(); 
+
+    if($id == null || $id==0) 
+        $id = new MongoId();    
+
+    if(isset($data['status']) ){ // Update Status after invitation link
+        $array = array("_id"=>$id,"status"=>$data['status']);
+        $result = $collection->save($array);
+    }else{                      // Invite user and add into to group_invite
+        $array = array("_id"=>$id,"group_id"=>$group_id ,"email"=>$email,"status"=>0,"date"=>$date);
+        $result = $collection->save($array);
+    }
+
+    
+
+    echo json_encode($id);          
+
+
+?>

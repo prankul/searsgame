@@ -1,0 +1,23 @@
+// do change with ur requirement
+
+<script>
+ 
+    
+    function isValidEmailAddress() {
+        
+         var email = document.getElementById("email").value;
+         console.log(email);
+    var pattern = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i;
+    console.log(pattern.test(email));
+};
+      
+   
+ 
+</script>
+
+ <form >
+    
+        <input type=text name="email" id="email">
+        <a onclick="isValidEmailAddress()">here</a>
+  
+ </form>

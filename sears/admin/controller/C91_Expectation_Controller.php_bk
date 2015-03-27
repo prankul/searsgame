@@ -1,0 +1,67 @@
+<?php
+
+    class C91_Expectation_Controller{
+
+        var $object; 
+
+        function __construct(){
+
+            $this->object = new C91_Expectation($id); 
+
+
+        } 
+
+
+        public function addAndUpdate(){
+
+            $this->object->setId($_GET['update']);
+
+            $expectation = (string)escapeshellcmd(htmlspecialchars(addslashes($_POST["expectation"])));
+            $goal = (string)escapeshellcmd(htmlspecialchars(addslashes($_POST["goal"])));
+
+            $this->object->setExpectation($expectation); 
+            $this->object->setGoal($goal);
+            $this->object->setGameSession(array("53f35ccc0bd384e410000041"));
+            $this->object->saveDocument();
+            header("Location:".base_path."?page=$page&action=all"); 
+
+
+        }
+
+        public function showForm(){
+            // display for for new document or edit document record 
+
+
+
+            $this->object->setId($_GET['edit']);
+            $this->object->getSingleObject();
+
+            expectationForm($this->object); // change function name according to your form view
+
+        }  
+
+
+        public function delete(){
+
+            $this->object->setId($_GET['delete']);
+            $this->object->removeDocument();
+            header("Location:".base_path."?page=$page&action=all");
+        }
+
+        public function showAll(){
+            
+            global $cursor;
+            $cursor = $this->object->getAllObject();     
+            expectationList();  // change function name according to your view
+            
+        }
+
+
+    }
+
+        if(isset($_GET["edit"]) || $action=="form")    
+    
+            
+        new C91_Expectation_Controller()
+
+?>

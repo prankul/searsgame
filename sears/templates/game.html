@@ -1,0 +1,83 @@
+
+
+
+
+
+ <div id="counter" style="visibility: hidden;"> </div>
+
+
+
+<div class="col-xs-8">
+
+<form id="game-form">
+<div class="expectation" id="myexpectation">
+</div>
+</form>
+
+  
+<input type=submit value="TOSS" id="toss">
+  
+  
+  <div id="chart3" style="height:300px; width:500px;"></div>
+  <div id="groupChart" class="row col-xs-11"></div>
+
+   </div>
+
+<div class="col-xs-4"> 
+ <div id="matrix">
+  
+   <table id="matrix-table" class="table">
+   <thead>
+    <th>Chance</th><th>Prediction</th><th>OutCome</th><th>Indicator</th></thead>
+   
+   </table>
+  </div>
+  <div id="finalResult" style="display:none;"></div>
+  </div>
+  
+      
+      
+  <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">GAME OVER</h4>
+            </div>
+            <div class="modal-body">
+                <h3>DO you want to save the Result?</h3>
+            </div>
+            <div class="modal-footer">
+                <button type="button"  class="btn btn-default" data-dismiss="modal">YES</button>
+                <button type="button" id="donotSaveResult" class="btn btn-primary" data-dismiss="modal">NO</button>
+        </div>
+    </div>
+  </div>
+</div>
+        <%
+            var submitImageBg = submitImage;
+        %>
+<style>
+
+input#toss {background-color: transparent;
+background-image: url(assets/img/<%=submitImageBg%>);
+background-repeat: no-repeat;
+background-position:10px 50%;
+background-size:65px;
+color:#00b200;
+margin: 0;
+padding:14px 10px 14px 70px;
+border:1px solid #00b200;
+font-weight: bold;
+font-size:18px;
+min-width: 100px;
+outline: none;
+text-transform: capitalize;
+border-radius: 2px;
+-moz-border-radius: 2px;
+-ms-border-radius: 2px;
+-o-border-radius: 2px;
+-webkit-border-radius: 2px;}
+
+</style>
+

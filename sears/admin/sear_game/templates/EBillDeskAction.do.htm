@@ -1,0 +1,412 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<style type="text/css">
+.hidediv
+{
+	display:none;           
+}
+.visiblediv
+{
+	display:block;
+}
+</style>
+<link href="EBillDeskAction.do_files/Myaccountstyle.css" rel="stylesheet" type="text/css">
+<script src="EBillDeskAction.do_files/fbds.js" async=""></script><script src="EBillDeskAction.do_files/fp.js" async=""></script><script src="EBillDeskAction.do_files/ga.js" async="" type="text/javascript"></script><script type="text/javascript" src="EBillDeskAction.do_files/Location.htm"></script>
+<script type="text/javascript" src="EBillDeskAction.do_files/promoERecharge.js"></script>
+<script type="text/javascript" src="EBillDeskAction.do_files/eRecharge.js"></script>
+<script src="EBillDeskAction.do_files/rightClick.js" type="text/javascript"></script>
+<script>
+function MM_openBrWindow(theURL,winName,features) {
+  window.open(theURL,winName,features);
+}
+function validateAlphabets(fieldValue, fieldName)
+  {
+      var valid = /^([a-zA-Z. ]{1,15})$/;
+      var invalid="";
+      if((!valid.test(fieldValue)) || (fieldValue == ""))
+      {
+      alert("Please enter Alphabets ( upto 15 characters ) for "+fieldName);
+      return false;        
+      }
+}
+function submitAig(circle){
+       document.getElementById("intrested").style.display = 'none';
+       document.getElementById("form").style.display = 'block';
+       
+       if(circle=='CN'){
+       circle='TN'
+       }else if(circle=='MU'){
+       circle='ROM'
+       }else if(circle=='UPW'){
+       circle='UP-W'
+       }else if(circle=='WBC'){
+       circle='WB'
+       }
+       
+       retrieveCities(circle,"","");
+       return false;
+}
+function saveCity(city){
+document.forms[0].citySelected.value=city;
+}
+function submitdetails(){
+
+   if(document.forms[0].firstName.value==null || document.forms[0].firstName.value=="")
+    {
+      alert("Please enter Name");
+      document.forms[0].firstName.focus();
+      return false;
+    }
+    
+    if(document.forms[0].strCity.value=="" || document.forms[0].strCity.value=="0")
+    {
+      alert("Please select the City");
+      document.forms[0].strCity.focus();
+      return false;
+    } 
+    
+    submitOffer(document.forms[0].citySelected.value,document.forms[0].firstName.value);
+    document.getElementById("form").style.display = 'none';  
+    document.getElementById("success").style.display = 'block';
+    return false;
+}
+
+var req; 
+function submitOffer(selectedCity,Name){
+     
+     //url = url+selectedOption+'&conType='+topOption;
+      url = 'prepaid/specialOffers.do?methodToCall=rechargeTataAig&cityId='+selectedCity+'&Name='+Name; 
+     
+    //Do the Ajax call
+    if (window.XMLHttpRequest){ // Non-IE browsers
+      req = new XMLHttpRequest();      
+      //A call-back function is define so the browser knows which function to call after the server gives a reponse back
+      req.onreadystatechange = populateCityBox;      
+      try {         
+      	req.open("GET", url+"&tempTime="+(new Date()), true); //was get         
+      } catch (e) {      
+      }
+      
+      req.send(null);      
+    } else if (window.ActiveXObject) { // IE      
+      req = new ActiveXObject("Microsoft.XMLHTTP");
+      
+      if (req) {
+      req.onreadystatechange = displayMsg;     
+        req.open("GET", url+"&tempTime="+(new Date()), true);
+        req.send();
+      }
+    }
+  }
+  
+function displayMsg(){
+  	document.getElementById('strCity').options.length = 1;
+     if (req.readyState == 4) { // Complete
+      if (req.status == 200) { // OK response
+         textToSplit = req.responseText;
+         returnElements=textToSplit.split("||"); //Split the document
+        }
+      } else {  
+            //alert("Problem with server response:" + req.statusText);
+        }    
+    }  
+ function getImage(businessType,productType,city)//Added by Bhaskar as part of COMKT3835
+  { 
+    alert('Getting Image');
+    document.forms[0].action="showImage.jsp?businessType="+businessType+"&productType="+productType+"&city="+city+"";
+    document.forms[0].submit();    
+  }
+
+</script>
+  
+    
+
+
+
+<!-- Vijaya Added below GA code as part of COMKT3835:Start -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-400817-12']);
+  _gaq.push(['_setDomainName', '.tatatele.in']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_setAllowHash', false]);
+  _gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<!-- Vijaya Added below GA code as part of COMKT3835:End -->
+
+
+
+
+
+
+<script language="JavaScript" type="text/javascript">
+<!-- Yahoo!
+window.ysm_customData = new Object();
+window.ysm_customData.conversion = "transId=,currency=,amount=150";
+var ysm_accountid  = "14T4I85JC11047P61G9TEP5IP24";
+document.write("<SCR" + "IPT language='JavaScript' type='text/javascript' " 
++ "SRC=//" + "srv2.wa.marketingsolutions.yahoo.com" + "/script/ScriptServlet" + "?aid=" + ysm_accountid 
++ "></SCR" + "IPT>");
+// -->
+</script><script language="JavaScript" type="text/javascript" src="EBillDeskAction.do_files/ScriptServlet"></script> 
+
+
+
+
+
+<script type="text/javascript">
+var fb_param = {};
+fb_param.pixel_id = '6007858037611';
+fb_param.value = '0.00';
+fb_param.currency = 'INR';
+(function(){
+  var fpw = document.createElement('script');
+  fpw.async = true;
+  fpw.src = '//connect.facebook.net/en_US/fp.js';
+  var ref = document.getElementsByTagName('script')[0];
+  ref.parentNode.insertBefore(fpw, ref);
+})();
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/offsite_event.php?id=6007858037611&amp;value=0&amp;currency=INR" /></noscript>
+
+
+<!--added by Bhuvan as part of BAU321 start-->
+<script>(function(){
+  window._fbds = window._fbds || {};
+  _fbds.pixelId = 254100958097767;
+  var fbds = document.createElement('script');
+  fbds.async = true;
+  fbds.src = '//connect.facebook.net/en_US/fbds.js';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(fbds, s);
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(["track", "PixelInitialized", {}]);
+</script>
+<noscript><img height="1" width="1" border="0" alt="" style="display:none" src="https://www.facebook.com/tr?id=254100958097767&amp;ev=NoScript" /></noscript>
+<!--added by Bhuvan as part of BAU321 end-->
+
+ </head>   
+
+
+
+<body>
+<form method="post" onsubmit="return false;">
+<input name="methodToCall" value="" type="hidden">
+
+<table align="center" border="0" width="100%" cellpadding="0" cellspacing="0">
+<tbody><tr><td class="tleft">
+    <table align="center" border="0" width="638" cellpadding="0" cellspacing="0">
+  <tbody><tr>
+    <td><table align="center" border="0" width="100%" cellpadding="0" cellspacing="0">
+      <tbody><tr>
+        <td class="shade_left"></td>
+        <td class="shade_topbg"></td>
+        <td class="shade_right"></td>
+      </tr>
+      <tr>
+        <td class="shade_leftbg"></td>
+        <td align="center" height="300">
+          <table align="center" border="0" width="95%" cellpadding="0" cellspacing="0">  
+         
+          <tbody><tr><th class="tabheading1">Dear Customer</th></tr>
+            <tr><td>&nbsp;</td></tr>
+          <tr> <td class="defaultlinks">Thank you for recharging through
+ tatadocomo.com. Your transaction details are mentioned below. Visit us 
+soon for best recharge options always!</td></tr>
+          <tr><td><div class="bottomdottedborder">&nbsp;</div></td></tr>
+      
+          
+            
+            <tr><td>
+            	<table class="tableborder" align="center" border="0" width="100%" cellpadding="0" cellspacing="0">
+                                    
+                                    <tbody><tr>
+                                     <th colspan="5">Transaction Details</th>   </tr>
+                                      
+                                      <tr>
+                                        <td class="labelstyle" width="40%">Your Number</td>
+                                        <td width="60%">8793349930</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="labelstyle">Recharge Amount(Rs)</td>
+                                        <td>150</td>
+                                      </tr>
+                                      
+                                      <tr>
+                                        <td class="labelstyle">Talk Time(Rs)</td>
+                                        <td>150</td>
+                                      </tr>
+                                      
+                                      <tr>
+                                        <td class="labelstyle">Transaction ID</td>
+                                        <td>ASMP3493256033</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="labelstyle">Transaction Status</td>
+                                        <td> Success</td>
+                                    
+                                      </tr>
+                                     
+                                      
+                                   </tbody></table></td>
+                                  </tr>
+                                  <tr><td class="btalign"><input src="EBillDeskAction.do_files/print.gif" value="Print" onclick="window.print()" type="image"> </td> </tr>
+                                
+                                  <tr>
+                                    <td class="defaultlinks redmsg boldfont tcenter"><b>Hi
+ ! Recharge Successful. Keep recharging your phone through Tata DOCOMO 
+Online Recharge to avail off the best offers, now and always. No 
+registration. No hidden charges.</b></td>
+                                  </tr>
+                                  
+                                  
+                                 <!-- Vijaya Added for COCC11436 -->
+                               
+                                 <!-- Vijaya Added for COCC11436 --> 
+                                  
+                                  <tr><td>&nbsp;</td></tr>
+                                 
+          </tbody></table>
+         </td>
+        <td class="shade_rightbg"></td>
+      </tr>
+      <tr>
+        <td class="shade_leftbottom"></td>
+        <td class="shade_bottombg"></td>
+        <td class="shade_rightbottom"></td>
+      </tr>
+    </tbody></table>
+  </td>
+  </tr>  
+</tbody></table>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+
+   
+  
+       
+  
+</tbody></table>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Google Code for SLP July 2012 Conversion Page -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1006406939;
+var google_conversion_language = "en";
+var google_conversion_format = "2";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "p2XnCO2pkwQQm5ry3wM";
+var google_conversion_value = 150;
+/* ]]> */
+</script>
+<script type="text/javascript" src="EBillDeskAction.do_files/conversion_002.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1006406939/?value=0&amp;label=p2XnCO2pkwQQm5ry3wM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+
+<!-- Google Code for online recharge Top Up Conversion Page -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1032183615;
+var google_conversion_language = "en";
+var google_conversion_format = "2";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "NBEICNfO8AMQv76X7AM";
+var google_conversion_value = 150;
+/* ]]> */
+</script>
+<script type="text/javascript" src="EBillDeskAction.do_files/conversion.js">
+</script><iframe name="google_conversion_frame" title="Google conversion frame" src="EBillDeskAction.do_files/a.htm" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" height="26" width="200" frameborder="0">&lt;img
+ height="1" width="1" border="0" alt="" 
+src="https://www.googleadservices.com/pagead/conversion/1032183615/?frame=0&amp;random=1411360666912&amp;cv=7&amp;fst=1411360666912&amp;num=1&amp;fmt=2&amp;value=150&amp;label=NBEICNfO8AMQv76X7AM&amp;bg=ffffff&amp;hl=en&amp;guid=ON&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_his=8&amp;u_tz=330&amp;u_java=false&amp;u_nplug=9&amp;u_nmime=24&amp;frm=0&amp;url=https%3A//www.tatatele.in/etradeGSM/EBillDeskAction.do%3FmethodToCall%3DpostBillDesk&amp;ref=https%3A//www.billdesk.com/pgidsk/ProcessPayment%3Fwpage%3DGolTm2HZT1GyF41wraFwPUwj"
+ /&gt;</iframe>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt=""  
+src="http://www.googleadservices.com/pagead/conversion/1032183615/?value=0&amp;label=NBEICNfO8AMQv76X7AM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+
+
+<!--Vijaya Added as part of COMKT3835 Yahoo conversion code:Start -->
+<script type="text/javascript"> if (!window.mstag) mstag = {loadTag : function(){},time : (new Date()).getTime()};</script> <script id="mstag_tops" type="text/javascript" src="EBillDeskAction.do_files/mstag.js"></script><script type="text/javascript" src="EBillDeskAction.do_files/mstag_002.js"></script> 
+<script type="text/javascript"> mstag.loadTag("analytics", {dedup:"1",domainId:"1603444",type:"1",actionid:"75982"})</script><script type="text/javascript" src="EBillDeskAction.do_files/analytics.js"></script> 
+<noscript> <iframe src="//flex.atdmt.com/mstag/tag/79b7bd03-da09-4ac9-9c64-135c74322100/analytics.html?dedup=1&domainId=1603444&type=1&actionid=75982" frameborder="0" scrolling="no" width="1" height="1" style="visibility:hidden;display:none"> </iframe> </noscript>
+<!-- Vijaya Added as part of COMKT3835 Yahoo conversion code:End -->
+
+<!-- Vijaya Added as part of COMKT4180 Rediff conversion code:Start-->
+
+<!-- Vijaya Added as part of COMKT4180 Rediff conversion code:End -->
+
+<!-- Vijaya Added as part of COMKT4211 Rediff conversion code:Start-->
+<script type="text/javascript">
+/*<![CDATA[*/
+OAS_rn = new String (Math.random());
+OAS_rns = OAS_rn.substring (2, 11);
+var tfsm_protocol = window.location.protocol;
+if (tfsm_protocol == "https:") {
+ DataColl="https://";
+} else { DataColl="http://"; 
+ } 
+document.write('<img alt=""  SRC="'+DataColl+'ads.rediff.com/RealMedia/ads/adstream.track/1'+OAS_rns+'?XE&epmAccountKey=1700&epmXTransKey=18&epmXtransStep=0&ProductCategory=&ItemDescription=&XE" style="width:0px;height:0px;border:none" />');
+/*]]>*/
+</script><img alt="" src="EBillDeskAction.do_files/1144452865" style="width:0px;height:0px;border:none">
+
+
+<script type="text/javascript">
+/*<![CDATA[*/
+OAS_rn = new String (Math.random());
+OAS_rns = OAS_rn.substring (2, 11);
+var tfsm_protocol = window.location.protocol;
+if (tfsm_protocol == "https:") {
+ DataColl="https://";
+} else { DataColl="http://"; 
+ } 
+document.write('<img alt=""  SRC="'+DataColl+'ads.rediff.com/RealMedia/ads/adstream.track/1'+OAS_rns+'?XE&epmAccountKey=1700&epmXTransKey=18&epmXtransStep=999&epmXtransCategory=&epmXtransItem=&epmXtransQuantity=&epmXTransRevenue=&XE" style="width:0px;height:0px;border:none" />');
+/*]]>*/
+</script><img alt="" src="EBillDeskAction.do_files/1976672866" style="width:0px;height:0px;border:none">
+<!-- Vijaya Added as part of COMKT4211 Rediff conversion code:End -->
+
+  
+  
+    true
+  
+
+<input name="uniqueId" value="" type="hidden">
+<input name="amountP" value="" type="hidden">
+<input name="mdn" value="" type="hidden">
+<input name="circleId" value="" type="hidden">
+<input name="accProfile" value="" type="hidden">
+<input name="isFromTopUpConfirm" value="" type="hidden">
+<input name="fromBuyTopUp" value="null" type="hidden">
+<input name="winProfile" value="" type="hidden">
+<input name="stvRiValue" value="" type="hidden">
+<input name="stvAmount" value="" type="hidden">
+<input name="recharge_type" value="" type="hidden">
+<input name="city" value="PUN" type="hidden">
+<input name="planRiValue" value="" type="hidden"> <!-- selected plan rivalue -->
+</form>
+</body></html>

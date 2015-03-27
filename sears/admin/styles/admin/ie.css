@@ -1,0 +1,4 @@
+@charset "utf-8";
+/* CSS Document */
+#menu > li > a, .button1, #ContactForm  .bg, #search .input{ behavior: url(js/PIE.htc); }
+.largWidth{ width:62% !important; }

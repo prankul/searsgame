@@ -1,0 +1,66 @@
+
+
+
+
+
+<div id="form" >
+   
+   
+      <% if(is_admin){ %> 
+    
+    <form  id="create-game-form">
+          
+         
+         
+         <input type="text" id="game_name" placeholder="Name" required>
+         
+         <input type="numeric" id="picks" placeholder="Number Of Picks" required>
+          
+            <!--<label for="game_type" class="col-sm-2 control-label">Select Game type</label>-->
+     
+            <select name="game_type"  class="game_typeJQ">
+                <option value="">Select game type</option>
+                <%       
+                        _.each(gameList,function(n) {
+                 %>
+                             <option value="<%=n['face']%>"><%=n['name']%></option>  
+                             
+                 <%       
+                            
+}); %>
+            </select>
+         
+         <input type="text" id="datepicker" placeholder="End Date" required>
+         
+         <input type="button" class="create_game" id="<%=groupId%>" value="Create Game" >
+         
+     </form>     
+         
+  <div class="add-group">Add New Game </div>  <%}%> 
+</div>    
+<div id="groupList">
+         <ul id="<%=groupId%>">   
+    <% _.each(games, function(game){  
+      
+         %>    
+         
+         <li id="<%=game._id%>"><span class="game-name"><%=game.gameName%></span> 
+         <span class="play">play<input type="hidden" value="<%=game.picks%>" class="picks" ></span> 
+         <span class="<%=game._id%>" style="display:none;" ><%=game.gameFace%></span>
+         
+         <span class="show-graph">show-graph</span><span class="remove">remove</span></li>
+      <% }); %>
+
+        </ul>
+</div>
+
+
+<style>
+#form{
+   
+    float:right;
+}​
+</style>
+
+     
+ 

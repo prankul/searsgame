@@ -1,0 +1,79 @@
+
+<?php
+    include_once("model/C91_Expectation.php");  // include your object class file
+    include_once("view/expectation.php");
+
+
+    global $cursor;
+
+
+
+    $object = new C91_Expectation(NULL);   // change your object name
+
+
+
+    if($action=="add" || $action=="update" ){  // for add new and update existing record
+
+        if(isset($_GET['update']) && !empty($_GET['update']))   
+            $object->setId($_GET['update']);
+
+        $expectation = (string)escapeshellcmd(htmlspecialchars(addslashes($_POST["expectation"])));
+        $goal = (string)escapeshellcmd(htmlspecialchars(addslashes($_POST["goal"])));
+
+        $object->setExpectation($expectation); 
+        $object->setGoal($goal);
+        $object->setGameSession(array("53f35ccc0bd384e410000041"));
+
+        // update for specific values only
+        if(isset($_GET['updateArray'])){
+
+
+            $criteria["_id"] = new MongoId($_GET['updateArray']);
+            $array['name'] = $object->getName();
+            $object->saveDocumentArray($criteria,$array);
+
+        }else 
+        {
+
+            $object->saveDocument();
+        }
+        header("Location:".base_path."?page=$page&action=all"); // redirect to list
+
+    }else
+        if(isset($_GET["edit"]) || $action=="form"){  
+            // display for for new document or edit document record 
+
+            if(isset($_GET['edit'])){
+
+                $object->setId($_GET['edit']);
+                $object->getSingleObject();
+
+
+
+
+
+            }
+
+            expectationForm($object); // change function name according to your form view
+
+
+    }else
+        if(isset($_GET["delete"])){  // delete document
+
+            $object->setId($_GET['delete']);
+            $object->removeDocument();
+            header("Location:".base_path."?page=$page&action=all");
+
+        }
+        else
+        {  
+            $cursor = $object->getAllObject();     
+            expectationList();  // change function name according to your view
+
+            //  var_dump(iterator_to_array($cursor));  // this is just for curiosity
+    }           
+
+    rightMenu();   // this is optional funtion in parent view to add and listall
+
+?>
+

@@ -1,0 +1,146 @@
+/* Getting the new tags to behave */
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {display:block}
+mark, rp, rt, ruby, summary, time {display:inline}
+/* Left & Right alignment */
+.left  {float:left}
+.right  {float:right}
+.wrapper {width:100%;overflow:hidden}
+/* Global properties ======================================================== */
+body {background:border:0;font:14px Arial, Helvetica, sans-serif;color:#808080;min-width:980px; background-color:#ededed}
+.ic, .ic a {border:0;float:right;background:#fff;color:#f00;width:50%;line-height:10px;font-size:10px;margin:-220% 0 0 0;overflow:hidden;padding:0}
+.css3{border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;box-shadow:0 0 4px rgba(0, 0, 0, .4);-moz-box-shadow:0 0 4px rgba(0, 0, 0, .4);-webkit-box-shadow:0 0 4px rgba(0, 0, 0, .4);position:relative}
+/* Global Structure ============================================================= */
+
+.main {margin:0 auto;width:960px;position:relative;  border-top:none; border-bottom:none; padding:0 65px}
+
+/* ============================= main layout ====================== */
+a {text-decoration:none;outline:none;-webkit-transition:background-color, color 0.2s linear;-moz-transition:background-color, color 0.2s linear;transition:background-color, color 0.2s linear}
+
+h1 { font-family:Arial; color:#0053fb; font-size:20px; font-weight:bold}
+h2 {font-size:33px;color:#fff;font-weight:700;line-height:1.2em;padding:30px 0 11px 0;letter-spacing:-1px}
+h3 {font-size:27px;color:#fff;font-weight:700;line-height:1.2em;padding:33px 0 17px 0;letter-spacing:-1px}
+h3.color1 {padding:0 0 7px 0}
+
+/* ============================= header ====================== */
+#page1{margin:0 auto;background-image:url(../images/background.png); background-repeat:repeat-y; width:1050px; overflow:hidden}
+#pageBottom{margin:0 auto;background-image:url(../images/bottom-back.png); background-repeat: no-repeat; width:1050px; height:66px}
+#logo {display:block;text-indent:-9999px;background:url(../images/uitbieden.png) 0 0 no-repeat;width:800px;height:87px; margin:0 auto; width:320px;}
+
+
+#search .input {font:12px Arial;color:#0053fb; font-weight:bold;margin:0;background:none; border:none; width:100px; }
+.inputBack {display:inline-block;color:#fff;padding:4px 6px;background:#fff8f8;position:relative;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;letter-spacing:-1px; border:2px solid #f48e87; float:left; margin-right:4px}
+
+.menu  { margin-top:4px; border:1px solid #F00; position:relative; display:inline-block; width:95%; padding:5px 4px;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px; border:1px solid #c91325}
+.menu > li  {float:left;padding-right:5px}
+.menu > li > a {display:block; font-family:Arial; font-weight:bold;font-size:11px;color:#fff; padding:3px 14px; line-height:12px;background:#ce1528;text-align:center;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px ;position:relative; }
+.menu > li > a span {display:block;position:relative}
+
+#Leftmenu { width:110px; float:left; position:relative}
+#Leftmenu > nav ul li > a {display: inline-block; font-family:Arial; font-weight:bold;font-size:12px;color:#fff; line-height:12px;background:#ce1528;text-align:center;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px ;position:relative; padding: 5px 0px; width:110px;height:30px}
+#Leftmenu > nav ul li{ margin-bottom:0; background-image: url(/images/leftmnu.png); background-repeat:no-repeat;  margin-top:5px; }
+
+
+#slider {position:absolute;top:209px;left:0;width:100%;height:453px;overflow:hidden;z-index:1}
+.items {display:none}
+.pagination {position:absolute;bottom:82px;right:274px;z-index:2}
+.pagination li {float:left;padding-left:3px}
+.pagination a {display:block;width:17px;height:17px;background:url(../images/buttons.png) right 0 no-repeat;text-indent:-9999px}
+.pagination a:hover, .pagination .current a {background-position:left}
+.banner {position:absolute;top:87px;z-index:2;right:32px;color:#a0a0a0;width:350px}
+.title {font-size:47px;line-height:1.2em;letter-spacing:-2px;display:block;padding-bottom:9px}
+.title .color2 {color:#000}
+.title span {display:block;margin-top:-17px}
+
+.banner .button1:hover {background:#090909;color:#fff}
+.signature {text-align:right;display:block;color:#5f870e;line-height:20px;padding-top:6px}
+.signature strong {display:block;color:#fff}
+/* ============================= content ====================== */
+#content1 { width:100%; position:relative; float:left; }
+#content2 { width:100%; position:relative; float:left; }
+#content2 .borderPage { width:96%; border-top:1px solid #e5e5e5; height:10px; position: relative; float:left}
+.middleCorner {display:inline-block;color:#fff;background:#f4f4f4;position:relative;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px; border:1px solid #d9d9d9; float:left; position:relative;margin-top:5px; margin-left:5px;  height:347px; padding:3px; width:453px}
+.imageContainer1{ display:inline-block;position:relative;border:1px solid #FFF;box-shadow: 2px 2px 2px #aaa;-o-box-shadow: 1px 1px 1px #aaa;-webkit-box-shadow: 1px 1px 1px #aaa; -moz-box-shadow: 1px 1px 1px #aaa; width:450px }
+.imageContainer{ display:inline-block;position:relative;border:1px solid #E4E4E4;box-shadow: 2px 2px 2px #E4E4E4;-o-box-shadow: 2px 2px 2px #E4E4E4;-webkit-box-shadow: 2px 2px 2px #E4E4E4;
+ -moz-box-shadow: 1px 1px 1px #aaa; width:296px; padding:1px}
+.addContainer{ width:920px; height:50px; border:1px solid #F00; position:relative; float:left; margin:8px 0; margin-bottom:35px;}
+.middleCorner p{ font-family:Arial; color:#333333; font-size:15px; margin:8px 12px}
+.bottomHolder{margin:3px 10px; height: 50px; float:left; width:286px;}
+
+.popularHolder {display:inline-block; position:relative; float:left; position:relative;margin-top:5px; height:347px;width:311px;}
+.popularHolder p{ font-family:Arial; color:#333333; font-size:15px; margin:8px 12px}
+
+.rightCorner1 {display:inline-block;color:#fff;background:#f4f4f4;position:relative;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px; border:1px solid #d9d9d9; float:left; position:relative;margin-top:5px; margin-left:5px;  height:167px; padding:3px; width:330px}
+
+.bottomHolder span{font-family:Arial; color: #000; font-size:26px; line-height:22px; float:left; margin-right:18px}
+.blue { color:#0053fb!important}
+.bottomHolder span b{font-family:Arial; color: #333333; font-size:13px; font-weight:normal; margin-bottom:-8px; position:absolute; }
+.pad_bot1 {padding-bottom:12px}
+.marg_right1 {margin-right:40px}
+.marg_right2 {margin-right:20px}
+.no_pad { padding-bottom:0}
+.color1 {color:#5f870e}
+.color2 {color:#fff}
+.button1 {display:inline-block; font-weight:bold; font-family:Arial;font-size:13px;color:#fff;padding:0 12px;background:#0061fc;line-height:27px;position:relative;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px}
+
+.rightbutton1 {display:inline-block; font-weight:bold; font-family:Arial;font-size:13px;color:#0053fb;padding:0 12px;background:#e9e9e9;line-height:27px;position: relative;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px; }
+
+
+.list1{}
+.list1 a {color:#808080;padding-left:15px;background:url(../images/marker_1.png) 0 5px no-repeat}
+.list1 a:hover {color:#5f870e}
+.list2{}
+.list2 li {padding-left:15px;background:url(../images/marker_1.png) 0 9px no-repeat;padding-bottom:12px}
+figure {padding-top:2px}
+.dropcap_1 {float:left;background:url(../images/dropcap_1.png) 0 0 no-repeat;width:45px;height:45px;text-align:center;font-size:33px;line-height:42px;color:#fff;font-weight:700;margin-right:15px;margin-top:2px;margin-bottom:10px}
+.address span {float:left;width:88px}
+.address a {text-decoration:underline}
+/* ============================= footer ====================== */
+footer  {padding:49px 20px 0;height:98px}
+footer a {color:#808080}
+footer a:hover {color:#fff}
+#icons {width:184px;float:right; margin-top: 15px;}
+#icons li {float:left;padding-right:10px}
+#icons .first {float:none;font-size:23px;color:#fff;font-weight:400;line-height:1.2em;margin-top:-15px;letter-spacing:-1px;padding-bottom:9px}
+/* Tooltips */
+.aToolTip  {background:#5f870e;color:#fff;	margin:0;padding:2px 10px 3px;font-size:12px;line-height:1.2em;position:absolute}
+.aToolTip .aToolTipContent  {position:relative;	margin:0;padding:0}
+/* ============================= forms ============================= */
+#ContactForm {margin-top:-2px}
+#ContactForm .wrapper {overflow:inherit;min-height:30px;line-height:26px}
+#ContactForm .textarea_box {min-height:189px}
+#ContactForm  span {float:left;width:80px}
+#ContactForm a {margin-left:15px;float:right;width:124px;padding:0;text-align:center}
+#ContactForm .input  {margin:0;width:420px;height:18px;background:none;padding:4px 10px;color:#000;font:14px Arial, Helvetica, sans-serif}
+#ContactForm textarea  {overflow:auto;width:820px;height:160px;background:none;padding:4px 10px;color:#000;font:14px Arial, Helvetica, sans-serif;margin:0}
+#ContactForm  .bg {background:#fff; position:relative;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;float:left}
+.topimg{float:left; }
+.price{float:left; width:75px; margin-left:7px;}
+.price b {font-family: Arial; color: #333; font-size: 13px; font-weight: normal;}
+.price span{font-family: Arial;color: black; font-size: 26px; line-height: 20px;}
+.biedButton1{background: url(../images/rectButton.png); width:144px; height:45px;float:left; margin-top: 3px; }
+.squarebutton{background: url(../images/squareButton.png) 0 0 no-repeat; width:75px; height:65px; margin-top:100px;background-repeat: no-repeat; margin-left:5px;}
+.nerrowbutton{background: url(../images/nerrowButton.png); width:115px; height:36px; color:black; float:left; margin-top: 16px; margin-left: 0px;}
+.holder{ width:184px!important; margin:0px;}
+.blue1{font-weight: bold; font-size: 20px; font-family: arial;}
+.icones{float: left; margin-top: 15px; margin-left:-19px;}
+.icones li{float:left; margin-right:10px; }
+.copy{ margin-left:-19px;}
+.as{vertical-align: bottom; line-height: 31px; padding-left: 17px;}
+.as1{ line-height: 42px; padding-left: 32px; margin-top:8px;}
+.as2{line-height: 25px;margin-left: 12px;}
+.pbutton{float:left;width:80px; height:161px;}
+.menu_a{height:33px;width:119px;}
+.menu_child{margin-top:9px;}
+.menu_f{margin-top:4px;}
+.p1{ margin-right:0px !important; padding-left: 12px!important; padding-right:4px !important;}
+.blak_bg{ background:url(../images/black-transpent.png); background-repeat:no-repeat;width: 95px; height:31px; float: right; z-index: 100; position: absolute; top: 2px; left: 205px;}
+.pink_bg{ background:url(../images/transperent-Back.png); background-repeat:no-repeat; width: 294px; height:33px; float: left; z-index: 100; position: absolute; top: 190px; left: 3px;}
+.t1{color: white;font-weight: bold;font-size: 15px;font-family: arial;padding: 4px;}
+.time{color: white;font-size: 17px; line-height:0px; padding: 15px;}
+.p_bg{ width:238px !important; top:134px !important;}
+.b_bg{top: 4px !important; left: 157px !important;}
+.bcont{top:302px; position:absolute;}
+.heading{position: absolute;top: 587px;}
+.sqb{margin-left: 16px; line-height: 21px; padding-top: 10px;}
+
+/*<img src="images/transperent-Back.png">*/

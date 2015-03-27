@@ -1,0 +1,9 @@
+
+/* -----------------for pie------------------- */
+
+#menu, li > a, .button1,.middleCorner,.imageContainer, .rightCorner1, .rightbutton1, .inputBack,nav, #ContactForm  .bg, .lower_menu li,.menu, .input, .FooterMenu, .bluebg,.box input[type="text"],.box input[type="password"],.beetal-button,.product-select,.violetbg ,.registration,.right,.rheading, .login-form-container,.login-container,.small-box input[type="text"],.aheading,.register input[type="text"],.one,.formBorder,.contact-form input[type="text"],.contact-form textarea,.bigGray-box, .fixImg{ behavior: url(js/PIE.htc); }
+nav{ padding-top:10px;}
+.login{ margin-left:0px !important;}
+.loginbutton{ margin-right:0px !important;}
+.small-box {width: 136px !important;}
+.bigGray-box{ width:370px !important;}

@@ -1,0 +1,60 @@
+.auctionStyle{ background: none repeat scroll 0 0 black;
+        color: white;
+        font-family: Tahoma,Courier,monospace;
+        font-size: 30px;
+        height: 47px;
+        text-align: center;
+    width: 293px;}
+
+
+    .constructionMask {
+        background: none repeat scroll 0 0 #000000;
+        height: inherit;
+        opacity: 0.4;
+        position: absolute;
+        width: 100%;
+        z-index: 109;
+        top: 0px;
+        overflow: auto;
+    }
+
+    div.livePopupBlock {
+
+        margin: 0 auto;
+        position: absolute;
+        width: 400px;
+        z-index: 110;
+    }
+
+    div.livePopupWrapper {
+        border: 1px solid #6C2412;
+        float: left;
+        width: 100%;
+    }
+    img.logoPopup {
+        float: left;
+        margin: 10px 0 10px 10px;
+    }
+    img.closePopup {
+        cursor: pointer;
+        float: right;
+        margin: 20px 10px 10px 0;
+    }
+    div.livePopupContentWrapper {
+        background-color: #FBE0D9;
+        clear: both;
+        float: left;
+        padding: 25px 20px;
+        width: 430px;
+    }
+    div.livePopupContentWrapper p.header, div.livePopupContentWrapper p.subHeader {
+        color: #D52027;
+        display: block;
+        font-family: "dinBold",Arial,Helvetica,sans-serif;
+        font-size: 1.8em;
+    }
+    div.livePopupContentWrapper p.subHeader {
+        color: #4C4C48;
+        font-size: 1.4em;
+        padding-top: 15px;
+    }

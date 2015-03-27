@@ -1,0 +1,78 @@
+<?php
+
+    $_POST['type'] = 'coin';
+    $_POST['result'] = '48,52';
+
+    if( $_POST['type'] = 'coin'){
+        $strResult = $_POST['result'];
+    }elseif( $_POST['type'] = 'dice'){
+        $strResult = $_POST['result'];
+    }elseif( $_POST['type'] = 'domino'){
+        $strResult = $_POST['result'];
+    }elseif( $_POST['type'] = 'cards'){
+        $strResult = $_POST['result'];
+    }
+
+?>
+
+
+
+
+
+<input type="hidden" id="JQ" value="<?=$strResult?>">
+<input type="hidden" id="wtAnthJQ" value="<?=$strWt?>">
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+
+
+<script language="javascript" type="text/javascript" src="http://www.selfcareindia.com/js/plugins/excanvas.js"></script>
+<script language="javascript" type="text/javascript" src="http://www.selfcareindia.com/js/plugins/jquery.jqplot.min.js"></script>
+<link rel="stylesheet" type="text/css" href="http://www.selfcareindia.com/js/plugins/jquery.jqplot.css" />
+
+<script type="text/javascript" src="http://www.selfcareindia.com/js/plugins/jqplot.canvasTextRenderer.min.js"></script>
+<script type="text/javascript" src="http://www.selfcareindia.com/js/plugins/jqplot.canvasAxisLabelRenderer.min.js"></script>
+<script type="text/javascript" src="http://www.selfcareindia.com/js/plugins/jqplot.dateAxisRenderer.min.js"></script>
+
+
+
+
+<script type="text/javascript">
+    
+
+
+$(document).ready(function(){
+  var plot2 = $.jqplot ('wtChartdiv', [[1,2,1,1,2,1,2,2,1]], {
+      // Give the plot a title.
+      title: 'Plot With Options',
+      // You can specify options for all axes on the plot at once with
+      // the axesDefaults object.  Here, we're using a canvas renderer
+      // to draw the axis label which allows rotated text.
+      axesDefaults: {
+        labelRenderer: $.jqplot.CanvasAxisLabelRenderer
+      },
+      // An axes object holds options for all axes.
+      // Allowable axes are xaxis, x2axis, yaxis, y2axis, y3axis, ...
+      // Up to 9 y axes are supported.
+      axes: {
+        // options for each axis are specified in seperate option objects.
+        xaxis: {
+          label: "X Axis",
+          // Turn off "padding".  This will allow data point to lie on the
+          // edges of the grid.  Default padding is 1.2 and will keep all
+          // points inside the bounds of the grid.
+          pad: 0
+        },
+        yaxis: {
+          label: "Y Axis",
+         tickInterval: 0.5
+        }
+      }
+    });  
+});
+</script>
+</script>
+
+
+<?php
+    echo '  <div id="wtChartdiv" style="height:500px;width:600px; "></div>';
+?>

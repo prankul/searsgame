@@ -1,0 +1,394 @@
+* 
+{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	top: 0px;
+	left: 0px;
+	font-family: Trebuchet, Verdana, Arial, sans-serif;
+	font-size: 13px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+header
+{
+	background-color: white;
+	height:auto;
+	overflow:auto;
+}
+
+img
+{
+	border: 0px;
+}
+input
+{
+font-size: 12px;
+padding: 7px 8px 7px 5px;
+background:#E9EBEC;
+border: 1px solid #DBDDDE;
+font: normal 1em Arial, Helvetica, sans-serif;
+}
+
+input[type=text], input[type=password]
+{
+	width: 400px;
+}
+#promo5 input[type=text], input[type=password]
+{
+    width: auto;
+}
+
+input[type=submit]
+{
+	background:#f90;	
+	padding:6px 18px;
+	color:#fff;
+	font-family:'Helvetica Neue',sans-serif;
+	font-size:15px;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border:1px solid #D68A0D;
+	margin-top:15px;
+}
+
+input[type=button]
+{
+	border:0px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover, input[type=button]:hover
+{
+	background-color:#D68A0D;
+	color:white;
+}
+
+textarea
+ {
+	padding: 0px;
+	margin:0px;
+	font: normal 1em Arial, Helvetica, sans-serif;
+	color: #333333;
+	border:0px solid #fff;
+	border-bottom:1px solid #333;
+	width:350px;
+	height:150px;
+}
+
+ul
+{
+	margin-top: 10px;
+	margin-left: 15px;
+}
+
+li
+{
+	margin-left: 15px;
+}
+
+
+
+legend
+{
+	color: white;
+	 background-color:#D68A0D;
+	border: 1px solid #DADADA;
+	padding: 10px 16px 10px 16px;	
+	margin-left:-12px;
+	 z-index:-1!important;
+} 
+
+
+select, option
+{
+	padding: 3px;
+}
+option:focus {
+    background-color: #D68A0D;
+}
+
+.error
+{
+	color:#fff;
+	background-color:#f00;
+	padding:5px;
+}
+
+.success
+{
+	color:#99cc33;
+	background-color:#ffff66;
+	padding:5px;
+}
+
+.small
+{
+	font-size: 0.8em;
+}
+
+#login-div
+{
+	padding:18% 20%;
+	text-align:center;
+}
+
+#dashboard
+{
+	background-color: #666;
+	height: 45px;
+}
+
+#main-content
+{
+	float:left;
+	padding: 25px;
+	width: 50%;
+}
+
+#complete-content
+{
+	float:left;
+	padding: 25px;
+}
+
+#rightnav-content
+{
+	float:right;
+	padding: 25px;
+	width: 400px;
+	border-left: 1px dotted black;
+}
+
+.menu
+{
+	float:left;
+	color: #ccc;
+	height:25px;
+}
+
+.menu:hover
+{
+	color: #666;
+}
+
+.menu-selected
+{
+	float:left;
+	color: #000;
+	height:25px;
+}
+
+.menu-selected:hover
+{
+	color: #666;
+}
+
+#menu-div
+{
+	float:left;
+	padding:5px 10px 0px 10px;
+}
+
+#menu-div:hover
+{
+	background-color: #fff;
+}
+
+#menu-selected
+{
+	float:left;
+	height:25px;
+	background-color:#fff;
+	padding:5px 10px 0px 10px;
+}
+
+#submenu-selected
+{
+	padding-right:25px;
+	font-weight:bold;
+}
+
+.fourthlevel
+{
+	display: block;
+	padding:8px;
+	border-left:3px solid black;
+	background-color:#eee;
+	font-weight:normal;
+	float: left;
+}
+
+.fourthlevel-selected
+{
+	display: block;
+	padding:8px;
+	border-left:3px solid black;
+	background-color:#ccc;
+	font-weight:bold;
+	float: left;
+}
+
+/*
+	Below code is for jquery-drag-n-drop
+*/
+#contentWrap {
+	width: 700px;
+	margin: 0 auto;
+	height: auto;
+	overflow: hidden;
+}
+
+#contentTop {
+	width: 600px;
+	padding: 10px;
+	margin-left: 30px;
+}
+
+#contentLeft {
+	float: left;
+	width: 400px;
+}
+
+#contentLeft li {
+	list-style: none;
+	margin: 0 0 4px 0;
+	padding: 10px;
+	background-color:#00CCCC;
+	border: #CCCCCC solid 1px;
+	color:#fff;
+}
+
+#contentRight {
+	float: right;
+	width: 260px;
+	padding:10px;
+	background-color:#336600;
+	color:#FFFFFF;
+}
+/*
+	Above code is for jquery-drag-n-drop
+*/
+
+.loading
+{
+	font-size:14px;
+	font-family:verdana;
+	font-weight:bold;
+}
+.loaded
+{
+	font-size:12px;
+	font-family:verdana;
+}
+.text
+{
+	font-size:12px;
+	font-family:verdana;	
+}
+.textheading
+{
+	font-size:14px;
+	font-family:verdana;	
+	font-weight:bold;
+}
+
+#mask
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	background-color: #000;
+	-moz-opacity:.70;
+	filter:alpha(opacity=70);
+	opacity:.70;
+	z-index: 1;
+}
+
+.editimagediv
+{
+	position:absolute;
+	background-color: #fff;
+	top:25%;
+	left:25%;
+	height:auto;
+	width:auto;
+	border:3px solid #000;
+	padding: 5px;
+	z-index:10;
+}
+
+.banners_title
+{
+	float:left;
+	font-weight:bold;
+	border:2px solid black;
+	border-right:0;
+	padding:10px 0px;
+	width:100px;
+	text-align:center;
+}
+
+.banners_checkbox
+{
+	float:left;
+	font-weight:bold;
+	border-bottom:1px solid black;
+	border-right:1px solid black;
+	padding:17px 0px;
+	width:101.5px;
+	text-align:center;
+}
+
+
+.rightSideBar h4{background-color: #D68A0D;
+border: none;
+border-image: initial;
+color: white;
+padding: 6px;
+font-family: Arial;
+background-image: url(http://uitbieden.dev.connect91.nl/styles/admin/setting.png);
+background-repeat: no-repeat;
+background-position: 97% 50%;
+font-weight: bold;
+position: absolute;
+width: 175px;
+margin-top: -29px;
+margin-left: -10px;
+}
+
+.rightSideBar  a {color: #5E5E5E;
+text-decoration: none;
+font-family: Arial;
+font-size: 11px;
+line-height: 30px;
+background-image: url(http://uitbieden.dev.connect91.nl/styles/admin/bullet_right.png);
+background-repeat: no-repeat;
+background-position: 0% 50%;
+padding-left: 14px; }
+#secondary  a:hover{ color:#F60;
+}
+
+.rightSideBar{
+background-color: #FDFDFD;
+border: 1px solid #CCC;
+border-image: initial;
+right: 118px;
+top: 55px;
+position: relative;
+width: 177px;
+margin-bottom: 50px;
+padding-left: 10px;
+}
+
+/*auction form changes*/
+.top-margin{margin-top: -30px ; margin-right: -29px !important; padding:0px !important;}
+ .form-wrapper{ width:100% !important; margin-top: 83px;}
+ .form-wrapper fieldset{width: 541px;float: left;margin-right: 15px;margin-left: 39px;}
+ .auction-fs{margin-top: -1132px;}
